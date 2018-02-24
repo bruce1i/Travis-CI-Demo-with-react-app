@@ -8,9 +8,9 @@
     "build": "npm install && npm run clean && webpack --config webpack.prod.js",
     "server": "webpack-dev-server --open --hot --config webpack.dev.js",
     "start": "npm install && npm run server",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "jest": "jest",
-    "lint": "eslint --ext .js,.jsx --fix src/"
+    "lint": "eslint --ext .js,.jsx --fix src/",
+    "test": "jest",
+    "report": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -61,5 +61,11 @@
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "redux-actions": "^2.2.1"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/test/units/**.(spec|test).js"
+    ],
+    "coverageDirectory": "reports/test/"
   }
 }

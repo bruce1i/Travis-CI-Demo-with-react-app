@@ -36,6 +36,7 @@ build/Release
 node_modules/
 jspm_packages/
 dist/
+reports/
 .idea/
 .DS_Store
 
