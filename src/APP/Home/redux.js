@@ -1,4 +1,4 @@
-import {createAction, handleAction} from 'redux-actions';
+import { createAction, handleAction } from 'redux-actions';
 
 /** Actions */
 export const actAddCount = createAction('addCunt');

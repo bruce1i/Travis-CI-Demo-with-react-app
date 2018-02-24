@@ -20,7 +20,7 @@ module.exports = {
             {
                 test: /\.(js|jsx)$/,
                 include: srcDir,
-                loader: 'babel-loader'
+                use: ['babel-loader', 'eslint-loader']
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/,
