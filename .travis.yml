@@ -1,8 +1,8 @@
 language: node_js
 node_js:
   - "8"
-before_install: 'echo "bruce test:> before install"'
-before_script: 'echo "bruce test:> before script" && exit 1'
+before_install: 'echo "bruce test:> before install" && exit 2'
+before_script: 'echo "bruce test:> before script"'
 after_success: 'echo "bruce test:> script success"'
 after_failure: 'echo "bruce test:> script failure"'
 after_script: 'echo "bruce test:> after script"'
